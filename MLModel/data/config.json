@@ -1,0 +1,12 @@
+{
+    "categorical_columns":["Countries",
+    "Local",
+    "Industry Sector",
+    "Accident Level",
+    "Genre",
+    "Employee or Third Party",
+    "Critical Risk"],
+
+    "target_column":"Potential Accident Level",
+    "description_column":"Description"
+}

@@ -1,0 +1,5 @@
+slack-sdk
+Flask
+slackeventsapi
+requests
+python-dotenv

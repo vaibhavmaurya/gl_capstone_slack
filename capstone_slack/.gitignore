@@ -1,18 +1,12 @@
 # Byte-compiled / optimized / DLL files
-**/__pycache__/
+__pycache__/
 *.py[cod]
 *$py.class
 
+slack/__pycache__/
+
 # C extensions
 *.so
-
-**/*/*.csv
-**/*/*.pkl
-
-
-**/venv
-
-**/*/~$*.pptx
 
 # Distribution / packaging
 .Python

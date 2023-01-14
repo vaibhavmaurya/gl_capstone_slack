@@ -1,0 +1,242 @@
+{
+	'token': 'Zgp8gxyPkafmZAkRwyJRBUEl',
+	'team_id': 'T04H96WHM2L',
+	'api_app_id': 'A04G535UAMV',
+	'event': {
+		'client_msg_id': 'a49f43d2-a411-4423-b459-e224a96ef120',
+		'type': 'message',
+		'text': 'helooooooo',
+		'user': 'U04GKFTSCG2',
+		'ts': '1671981680.117079',
+		'blocks': [{
+			'type': 'rich_text',
+			'block_id': '0kK',
+			'elements': [{
+				'type': 'rich_text_section',
+				'elements': [{
+					'type': 'text',
+					'text': 'helooooooo'
+				}]
+			}]
+		}],
+		'team': 'T04H96WHM2L',
+		'channel': 'C04GCV8DANA',
+		'event_ts': '1671981680.117079',
+		'channel_type': 'channel'
+	},
+	'type': 'event_callback',
+	'event_id': 'Ev04HA8QP68G',
+	'event_time': 1671981680,
+	'authorizations': [{
+		'enterprise_id': None,
+		'team_id': 'T04H96WHM2L',
+		'user_id': 'U04GY8CTTLH',
+		'is_bot': True,
+		'is_enterprise_install': False
+	}],
+	'is_ext_shared_channel': False,
+	'event_context': '4-eyJldCI6Im1lc3NhZ2UiLCJ0aWQiOiJUMDRIOTZXSE0yTCIsImFpZCI6IkEwNEc1MzVVQU1WIiwiY2lkIjoiQzA0R0NWOERBTkEifQ'
+}
+
+
+-----------------------------------------------------------------------------------
+
+{
+	'type': 'block_actions',
+	'user': {
+		'id': 'U04GKFTSCG2',
+		'username': 'vaibhav.sense',
+		'name': 'vaibhav.sense',
+		'team_id': 'T04H96WHM2L'
+	},
+	'api_app_id': 'A04G535UAMV',
+	'token': 'Zgp8gxyPkafmZAkRwyJRBUEl',
+	'container': {
+		'type': 'message',
+		'message_ts': '1672052482.800579',
+		'channel_id': 'C04GCV8DANA',
+		'is_ephemeral': False
+	},
+	'trigger_id': '4551675970775.4587234599088.bba67ea7e694f8cae29a9fae3fc2b909',
+	'team': {
+		'id': 'T04H96WHM2L',
+		'domain': 'greatlearning-3i39960'
+	},
+	'enterprise': None,
+	'is_enterprise_install': False,
+	'channel': {
+		'id': 'C04GCV8DANA',
+		'name': 'gl-capstone-nlp-bot'
+	},
+	'message': {
+		'bot_id': 'B04GKK4DGBU',
+		'type': 'message',
+		'text': 'Try block',
+		'user': 'U04GY8CTTLH',
+		'ts': '1672052482.800579',
+		'app_id': 'A04G535UAMV',
+		'blocks': [{
+			'type': 'section',
+			'block_id': 'QvsI',
+			'text': {
+				'type': 'mrkdwn',
+				'text': 'Enter following mandatory options',
+				'verbatim': False
+			}
+		}, {
+			'type': 'divider',
+			'block_id': 'b54'
+		}, {
+			'type': 'section',
+			'block_id': 'pKt',
+			'text': {
+				'type': 'mrkdwn',
+				'text': 'Select Country',
+				'verbatim': False
+			},
+			'accessory': {
+				'type': 'static_select',
+				'action_id': 'country',
+				'placeholder': {
+					'type': 'plain_text',
+					'text': 'Select...',
+					'emoji': True
+				},
+				'options': [{
+					'text': {
+						'type': 'plain_text',
+						'text': 'Country01',
+						'emoji': True
+					},
+					'value': 'Country01'
+				}, {
+					'text': {
+						'type': 'plain_text',
+						'text': 'Country02',
+						'emoji': True
+					},
+					'value': 'Country02'
+				}]
+			}
+		}, {
+			'type': 'section',
+			'block_id': 'LEuvg',
+			'text': {
+				'type': 'mrkdwn',
+				'text': 'Select Gender',
+				'verbatim': False
+			},
+			'accessory': {
+				'type': 'static_select',
+				'action_id': 'gender',
+				'placeholder': {
+					'type': 'plain_text',
+					'text': 'Select...',
+					'emoji': True
+				},
+				'options': [{
+					'text': {
+						'type': 'plain_text',
+						'text': 'Male',
+						'emoji': True
+					},
+					'value': 'male'
+				}, {
+					'text': {
+						'type': 'plain_text',
+						'text': 'Female',
+						'emoji': True
+					},
+					'value': 'female'
+				}]
+			}
+		}, {
+			'type': 'divider',
+			'block_id': 'iL0U1'
+		}, {
+			'type': 'input',
+			'block_id': 'iJG',
+			'label': {
+				'type': 'plain_text',
+				'text': 'Describe the incident',
+				'emoji': True
+			},
+			'optional': False,
+			'dispatch_action': False,
+			'element': {
+				'type': 'plain_text_input',
+				'action_id': 'incident',
+				'multiline': True,
+				'dispatch_action_config': {
+					'trigger_actions_on': ['on_enter_pressed']
+				}
+			}
+		}, {
+			'type': 'divider',
+			'block_id': 'VNGE3'
+		}, {
+			'type': 'actions',
+			'block_id': '5xTSJ',
+			'elements': [{
+				'type': 'button',
+				'action_id': 'confirm_button',
+				'text': {
+					'type': 'plain_text',
+					'text': 'Confirm',
+					'emoji': True
+				},
+				'value': 'click_me_123'
+			}]
+		}],
+		'team': 'T04H96WHM2L'
+	},
+	'state': {
+		'values': {
+			'pKt': {
+				'country': {
+					'type': 'static_select',
+					'selected_option': {
+						'text': {
+							'type': 'plain_text',
+							'text': 'Country01',
+							'emoji': True
+						},
+						'value': 'Country01'
+					}
+				}
+			},
+			'LEuvg': {
+				'gender': {
+					'type': 'static_select',
+					'selected_option': {
+						'text': {
+							'type': 'plain_text',
+							'text': 'Female',
+							'emoji': True
+						},
+						'value': 'female'
+					}
+				}
+			},
+			'iJG': {
+				'incident': {
+					'type': 'plain_text_input',
+					'value': 'Here wo go with our long text and just check n'
+				}
+			}
+		}
+	},
+	'response_url': 'https://hooks.slack.com/actions/T04H96WHM2L/4566217892002/OgdD77zkoEnghhHrU6FgisXE',
+	'actions': [{
+		'action_id': 'confirm_button',
+		'block_id': '5xTSJ',
+		'text': {
+			'type': 'plain_text',
+			'text': 'Confirm',
+			'emoji': True
+		},
+		'value': 'click_me_123',
+		'type': 'button',
+		'action_ts': '1672052541.997269'
+	}]
+}
