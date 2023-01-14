@@ -14,8 +14,15 @@ A brief concept and architecture diagram is below.
 
 ![](https://raw.githubusercontent.com/vaibhavmaurya/gl_capstone_slack/main/images/GL_Capstone_Project_Arch.jpg)
 
+- Slack communication service connects with ML Model training and prediction service at port 5010.
+- The Slack channel connects with the Slack communication service at port 3010.
+- The Slack channel/application creator has to register the service endpoints in the [Slack API portal](api.slack.com)
+
 Below is the snapshot of the bot communication in the slack channel.
 ![](https://raw.githubusercontent.com/vaibhavmaurya/gl_capstone_slack/master/FullCommunication.jpg)
+
+- First time the member of the slack channel has to invite the **gl-nlp-bot**, which is a bot.
+- Once bot is added, the bot will detect the messages posted in the channel.
 
 ## Slack Communication Service 
 Slack communication service is implemented in Flask, python rest api framework. It has following endpoints
@@ -24,6 +31,7 @@ Slack communication service is implemented in Flask, python rest api framework. 
 | ------------------------------------- | ---------------------------------------- |
 | `/slack/events` | Whenever there is a message in the channel **gl-capstone-nlp-bot**, this rest api is called by slack. Here the message from the channel is recieved, which is further processed and reply through the bot is prepared here. Bot in response sends back a form, where user has to input the details and click the Confirm button. This communication can be well understood in the below diagram of slack communication snapshot. |
 | `/slack/message-actions` | When user clicks the confirm button, the slack channel calls this rest api. Here in this endpoint, data from the user filled form is extracted and passed to **ML model endpoint /predict**. The ML model endpoint responds with the accident level, which is communicated back into the slack channel using bot **gl-nlp-bot** |
+
 
 ### Slack Communication Service implementation references
 - [Slack APIs for bot implementation](https://api.slack.com/apis)
