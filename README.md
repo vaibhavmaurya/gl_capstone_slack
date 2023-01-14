@@ -2,6 +2,13 @@
 ---
 [git repository](https://github.com/vaibhavmaurya/gl_capstone_slack.git)
 
+# Table of contents
+
+- [Overview](#overview)
+- [Slack Communication Service](#slack-communication-service)
+  - [Slack Communication Service implementation references](#slack-communication-service-implementation-references)
+- [ML Model training and predcition service](#ml-model-training-and-predcition-service)
+
 ## Overview
 For chat/communication, in this project [Slack](slack.com) is being used. There is a bot **gl-nlp-bot** in the slack channel which is used to answer the accident level for any incident reported by user.
 How this bot is implemented, detals are below.
