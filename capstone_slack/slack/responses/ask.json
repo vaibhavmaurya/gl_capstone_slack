@@ -1,0 +1,122 @@
+{
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Enter following mandatory fields"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select Country"
+			},
+			"accessory": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select...",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Country01",
+							"emoji": true
+						},
+						"value": "Country_01"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Country02",
+							"emoji": true
+						},
+						"value": "Country_02"
+					}
+				],
+				"action_id": "country"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select Gender"
+			},
+			"accessory": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select...",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Male",
+							"emoji": true
+						},
+						"value": "Male"
+					},
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Female",
+							"emoji": true
+						},
+						"value": "Female"
+					}
+				],
+				"action_id": "gender"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"multiline": true,
+				"action_id": "incident"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Describe the incident",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"action_id": "confirm_button",
+					"text": {
+						"type": "plain_text",
+						"text": "Confirm",
+						"emoji": true
+					},
+					"value": "click_me_123"
+				}
+			]
+		}
+	],
+
+	"action_elements": [
+		"country",
+		"gender",
+		"incident"
+	]
+}
