@@ -190,6 +190,7 @@ def incoming_slack_message():
         res = retrieve_values(form_json['state']['values'])
         final_res = get_model_response(res)
         slack_send_message(final_res, thread_ts=form_json['message']['ts'])
+        # slack_send_message(final_res, thread_ts=None)
         # slack_send_message(final_res)
     return 'action successful'
 

@@ -79,6 +79,110 @@
 			}
 		},
 		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select Industry Sector"
+			},
+			"accessory": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select...",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Mining",
+							"emoji": true
+						},
+						"value": "Mining"
+					}
+				],
+				"action_id": "industry_sector"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select Local"
+			},
+			"accessory": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select...",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Local_03",
+							"emoji": true
+						},
+						"value": "Local_03"
+					}
+				],
+				"action_id": "local"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select Employee or Third Party"
+			},
+			"accessory": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select...",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Employee",
+							"emoji": true
+						},
+						"value": "Employee"
+					}
+				],
+				"action_id": "thirdparty_employee"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Select Critical Risk"
+			},
+			"accessory": {
+				"type": "static_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select...",
+					"emoji": true
+				},
+				"options": [
+					{
+						"text": {
+							"type": "plain_text",
+							"text": "Others",
+							"emoji": true
+						},
+						"value": "Others"
+					}
+				],
+				"action_id": "critical_risk"
+			}
+		},
+		{
 			"type": "divider"
 		},
 		{
